@@ -7,7 +7,7 @@ const menu = [
     { name: 'SLA', icon: 'commit' },
     { name: 'Cẩm nang bán hàng', icon: 'menu_book', url: '/ehandbook' },
     { name: 'Phê duyệt tập trung', icon: 'spellcheck', url: '/approval' },
-    { name: 'Cơ hội bán', icon: 'auto_fix_normal', url: 'portal-lead/chb' },
+    { name: 'Cơ hội bán', icon: 'auto_fix_normal', url: '/portal-lead/chb' },
     { name: 'Call Report', icon: 'summarize', url: '/' },
     { name: 'Quản lý công việc', icon: 'view_timeline', url: '/' },
 ];
