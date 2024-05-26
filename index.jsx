@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import _ from 'lodash';
 
 const menu = [
@@ -50,6 +50,9 @@ function Sidebar({ open, closeAside, version, renderRightMenu }) {
                             </i>
                         </div>
                         {menu?.map?.((item, index) => {
+                            if (index >= 3 && sessionStorage.getItem('showMenu') !== '1') {
+                                return <Fragment key={index} />;
+                            }
                             return (
                                 <a
                                     href={process.env.NEXT_PUBLIC_BASE_PATH + (item?.url || '')}
